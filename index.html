@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background:palevioletred;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: #f4f4f4;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .courses, .teachers {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .course-list, .teachers-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .course, .teacher {
+            background: #fff;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .course img, .teacher img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .course h3, .teacher h3 {
+            background-color: palevioletred;
+            color: #fff;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .course p, .teacher p {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .course-list, .teachers-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .course, .teacher {
+                width: 90%;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn with Dhivya</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Welcome to Our Educational Platform</h2>
+            <p>Your journey to knowledge starts here.</p>
+        </section>
+        
+        <section class="courses">
+            <h2>Our Courses</h2>
+            <div class="course-list">
+                <div class="course">
+                    <h3>Introduction to Electronics</h3>
+                    <img src="img/electronics.png" alt="Introduction to Electronics">
+                    <p>This course provides an overview of the fundamental principles of electronics. Topics include basic electronic components, circuit theory, and the operation of simple electronic devices. Students will gain hands-on experience through lab sessions and projects.</p>
+                </div>
+                <div class="course">
+                    <h3>Communication Systems</h3>
+                    <img src="img/comm.png" alt="Communication Systems">
+                    <p>This course covers the basics of communication systems, including analog and digital communication, modulation techniques, and data transmission. Students will learn about the various components and technologies used in modern communication systems.</p>
+                </div>
+                <div class="course">
+                    <h3>Digital Signal Processing (DSP)</h3>
+                    <img src="img/dsp.png" alt="Digital Signal Processing (DSP)">
+                    <p>An in-depth study of digital signal processing, focusing on signal analysis, filtering, and transformation techniques. Students will work on practical applications and projects to understand the real-world implementation of DSP concepts.</p>
+                </div>
+                <div class="course">
+                    <h3>Microprocessors and Microcontrollers</h3>
+                    <img src="img/mpmc.png" alt="Microprocessors and Microcontrollers">
+                    <p>This course introduces students to the architecture and programming of microprocessors and microcontrollers. Topics include assembly language programming, interfacing techniques, and the design of embedded systems.</p>
+                </div>
+            </div>
+        </section>
+        <section class="teachers">
+            <h2>Our Teachers</h2>
+            <div class="teachers-list">
+                <div class="teacher">
+                    <h3>Dr. Emily Brown</h3>
+                    <img src="img/t1.png" alt="Dr. Emily Brown">
+                    <p>Subject: Introduction to Electronics<br>
+                    Qualifications: Ph.D. in Electrical Engineering<br>
+                    Experience: 12 years<br>
+                    Dr. Emily Brown has been a cornerstone of our Electronics program, imparting fundamental concepts and practical skills to first-year students. Her innovative teaching methods and dedication to student success make her a beloved figure in the department.</p>
+                </div>
+                <div class="teacher">
+                    <h3>Prof. Michael Green</h3>
+                    <img src="img/t2.png" alt="Prof. Michael Green">
+                    <p>Subject: Communication Systems<br>
+                    Qualifications: M.Tech in Communication Engineering<br>
+                    Experience: 10 years<br>
+                    Prof. Michael Green specializes in Communication Systems, guiding students through the complexities of signal transmission and reception. His practical approach and hands-on projects help students grasp intricate concepts and apply them in real-world scenarios.</p>
+                </div>
+                <div class="teacher">
+                    <h3>Dr. Sarah Lee</h3>
+                    <img src="img/t3.png" alt="Dr. Sarah Lee">
+                    <p>Subject: Digital Signal Processing (DSP)<br>
+                    Qualifications: Ph.D. in Signal Processing<br>
+                    Experience: 15 years<br>
+                    With a profound understanding of Digital Signal Processing, Dr. Sarah Lee equips students with the skills to analyze and manipulate signals. Her research-driven teaching style and emphasis on contemporary applications ensure students are well-prepared for advanced challenges.</p>
+                </div>
+                <div class="teacher">
+                    <h3>Prof. Robert Davis</h3>
+                    <img src="img/t4.png" alt="Prof. Robert Davis">
+                    <p>Subject: Microprocessors & Controllers<br>
+                    Qualifications: M.E. in Embedded Systems<br>
+                    Experience: 8 years<br>
+                    Prof. Robert Davis brings a practical perspective to the study of Microprocessors and Controllers. His extensive industry experience and engaging classroom techniques help students master the intricacies of embedded systems and microcontroller programming.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Educational Website</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

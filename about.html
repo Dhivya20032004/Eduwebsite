@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background:palevioletred;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        .about-content, .avail-courses {
+            padding: 2rem;
+            background: #fff;
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content h2, .avail-courses h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .about-content p, .avail-courses p {
+            margin-bottom: 1rem;
+        }
+
+        .avail-courses ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .avail-courses li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .about-content, .avail-courses {
+                padding: 1rem;
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="about-content">
+            <h2>Our Mission</h2>
+            <p>At Learn with Dhivya, we are dedicated to nurturing the next generation of engineers and innovators. With a focus on Electronics and Communication Engineering, we provide a dynamic learning environment that encourages creativity, critical thinking, and practical skills. Our mission is to provide quality education, hands-on experience, and the latest industry insights to help you excel in your academic and professional journey. Explore our range of courses, expert faculty, and cutting-edge resources designed to foster innovation and excellence.</p>
+        </section>
+        <section class="about-content">
+            <h2>Our Vision</h2>
+            <p>To offer high-quality education that meets global standards.<br>
+               To equip students with the skills and knowledge required to excel in the industry.<br>
+               To promote research and development in emerging technologies.<br>
+               To foster a collaborative and inclusive learning environment.</p>
+        </section>
+        <section class="avail-courses">
+            <h2>Available Courses</h2>
+            <h3>Core Courses</h3>
+            <ul>
+                <li>Basic Electronics</li>
+                <li>Digital Electronics</li>
+                <li>Analog Electronics</li>
+                <li>Microprocessors and Microcontrollers</li>
+                <li>Signals and Systems</li>
+                <li>Digital Signal Processing</li>
+                <li>Analog Communication</li>
+                <li>Digital Communication</li>
+                <li>Electromagnetic Theory</li>
+                <li>Control Systems</li>
+                <li>VLSI Design</li>
+                <li>Embedded Systems</li>
+                <li>Network Analysis</li>
+                <li>Antenna and Wave Propagation</li>
+                <li>Optical Communication</li>
+                <li>Microwave Engineering</li>
+            </ul>
+        </section>
+        <section class="avail-courses">
+            <h3>Advanced and Elective Courses</h3>
+            <ul>
+                <li>Wireless Communication</li>
+                <li>Satellite Communication</li>
+                <li>Data Communication and Networking</li>
+                <li>Advanced VLSI Design</li>
+                <li>Robotics and Automation</li>
+                <li>Nanoelectronics</li>
+                <li>Biomedical Electronics</li>
+                <li>Power Electronics</li>
+                <li>Information Theory and Coding</li>
+                <li>Image Processing</li>
+                <li>Artificial Intelligence in ECE</li>
+                <li>Internet of Things (IoT)</li>
+                <li>Machine Learning for ECE</li>
+                <li>Renewable Energy Systems</li>
+                <li>MEMS (Micro-Electromechanical Systems)</li>
+                <li>Radar and Navigational Aids</li>
+            </ul>
+        </section>
+        <section class="avail-courses">
+            <h3>Laboratory Courses</h3>
+            <ul>
+                <li>Electronics Lab</li>
+                <li>Digital Electronics Lab</li>
+                <li>Microprocessor Lab</li>
+                <li>Communication Lab</li>
+                <li>Digital Signal Processing Lab</li>
+                <li>Embedded Systems Lab</li>
+                <li>VLSI Design Lab</li>
+                <li>Microwave Lab</li>
+                <li>Control Systems Lab</li>
+                <li>Networking Lab</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Educational Website</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: palevioletred;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.courses {
+    padding: 2em;
+    background-color: #fff;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course {
+    background-color: #e7e7e7;
+    padding: 1em;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+.teachers {
+    padding: 2em 0;
+    background-color: #fff;
+}
+
+.teachers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.teacher {
+    background-color: #e7e7e7;
+    padding: 1em;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.teacher:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.about-content, .contact-form {
+    padding: 2em;
+    background-color: bisque;
+    margin: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+    margin: 0.5em 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: palevioletred;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 0.75em 1.5em;
+    background-color: palevioletred;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d1627d;
+}
+
+.avail-courses {
+    padding: 2em;
+    background-color: bisque;
+    margin: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .course-list, .teachers-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course, .teacher {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+
+    .contact-form label, .contact-form input, .contact-form textarea {
+        width: 90%;
+    }
+}
